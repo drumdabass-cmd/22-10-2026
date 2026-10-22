@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; background:#070707; color-scheme: dark; }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  :focus-visible{outline:2px solid #DFC28F;outline-offset:3px}
+  @keyframes vr-fall{from{transform:translateY(-20px)}to{transform:translateY(560px)}}
+  @media (prefers-reduced-motion:reduce){.vr-flake{animation:none!important}}
+  body { background-color: #070707; color: #f5f5f5; font-family: 'Manrope', sans-serif; }
+  .gold-gradient { background: linear-gradient(135deg, #dfc28f 0%, #c5a059 50%, #9a7532 100%); }
+  .gold-text { background: linear-gradient(135deg, #dfc28f 0%, #c5a059 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  input[type=range] { accent-color: #c5a059; }
